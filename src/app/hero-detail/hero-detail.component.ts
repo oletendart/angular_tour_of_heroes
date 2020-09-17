@@ -11,7 +11,11 @@ import { HeroService } from '../hero.service';
 })
 export class HeroDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(constructor(
+  private route: ActivatedRoute,
+  private heroService: HeroService,
+  private location: Location
+) {}) { }
 
   ngOnInit() {
   }
