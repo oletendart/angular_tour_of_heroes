@@ -10,7 +10,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({ providedIn: 'root' })
 export class HeroService {
-
+  
+  private heroesUrl = 'api/heroes';  // URL to web api
   constructor(
   private messageService: MessageService,
   private http: HttpClient,
